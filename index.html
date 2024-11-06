@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya Purwar - Portfolio</title>
+    <style>
+        @font-face {
+            font-family: 'CustomFont';
+            src: url('fonts/Telegraf/PPTelegraf-Regular.otf');
+            font-weight: normal;
+            font-style: normal;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'CustomFont', sans-serif;
+        }
+
+
+        body {
+            background-color: #000;
+            color: #fff;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: flex-end;
+            padding: 20px 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 30px;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #a855f7;
+        }
+
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 60px 0;
+        }
+
+        .hero-content {
+            flex: 1;
+        }
+
+        .hero-image {
+            flex: 1;
+            position: relative;
+        }
+
+        .intro-text {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .name {
+            font-size: 100px;
+            font-family: 'CustomFont';
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .name span {
+            color: #a855f7;
+        }
+
+        .title {
+            font-family: 'CustomFont';
+            font-size: 20px;
+            color: #888;
+            margin-bottom: 20px;
+        }
+
+        .profile-container {
+            position: relative;
+            width: 400px;
+            height: 400px;
+        }
+
+        .profile-image {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .decorative-element {
+            position: absolute;
+            width: 120%;
+            height: 120%;
+            top: -10%;
+            left: -10%;
+            z-index: -1;
+            background: linear-gradient(45deg, #a855f7, #ff8c00);
+            opacity: 0.6;
+            border-radius: 40% 60% 70% 30%;
+            animation: float 6s ease-in-out infinite;
+        }
+        .quotation img{
+            height: 30px;
+            width: 50px;
+        }
+
+        .quote{
+            margin-bottom: 20px;
+        }
+
+        .dive-in {
+            display: inline-block;
+            padding: 15px 40px;
+            background: linear-gradient(45deg, #a855f7, #ff8c00);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .dive-in:hover {
+            transform: translateY(-3px);
+        }
+
+        .social {
+            margin-top: 40px;
+        }
+
+        .social-text {
+            font-size: 18px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .social-icons a {
+            color: #fff;
+            margin-right: 20px;
+            font-size: 24px;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #a855f7;
+        }
+
+        .myimage img{
+            height: 500px;
+            width: 500px;
+            index: -1;
+            left: 800px;
+        }
+            nav {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#experience">Experience</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#achievements">Achievements</a>
+            <a href="#certification">Certification</a>
+        </nav>
+
+        <div class="hero">
+            <div class="hero-content">
+                <p class="intro-text">Hi, I am</p>
+                <h1 class="name">
+                    <span>Aditya</span><br>
+                    Purwar
+                </h1>
+                <p class="title">Data Scientist | Data Analyst | Generative AI Enthusiast</p>
+                <div class="quotation">
+                    <img src="assets\Quotation Mark.png" alt="">
+                </div>
+                <p class="quote">Success is a Journey, not a Destination</p>
+
+
+                <a href="#" class="dive-in">DIVE IN</a>
+
+                <div class="social">
+                    <p class="social-text">GET SOCIAL</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/aditya-purwar-710890241/" aria-label="Linkedin"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="myimage">
+                <img src="assets\myimage.png" alt="">
+            </div>
+
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+</body>
+</html>
